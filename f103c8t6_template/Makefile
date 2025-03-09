@@ -39,6 +39,7 @@ BUILD_DIR = build
 # C sources
 C_SOURCES =  \
 Core/Src/main.c \
+$(wildcard Drivers/Utilities/*.c)
 
 # ASM sources
 ASM_SOURCES =  \
@@ -100,7 +101,8 @@ AS_INCLUDES =
 C_INCLUDES =  \
 -ICore/Inc \
 -IDrivers/CMSIS/Device/ST/STM32F1xx/Include \
--IDrivers/CMSIS/Include
+-IDrivers/CMSIS/Include \
+-IDrivers/Utilities/Inc \
 
 
 # compile gcc flags

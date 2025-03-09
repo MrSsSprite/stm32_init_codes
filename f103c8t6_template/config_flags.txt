@@ -1,0 +1,9 @@
+-ICore/Inc \
+-IDrivers/CMSIS/Device/ST/STM32F1xx/Include \
+-IDrivers/CMSIS/Include
+-IDrivers/Utilities/Inc
+
+-DUSE_HAL_DRIVER \
+-DSTM32F103xB
+
+-std=c99
