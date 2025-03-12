@@ -1,0 +1,8 @@
+-ICore/Inc
+-IDrivers/CMSIS/Device/ST/STM32F1xx/Include
+-IDrivers/CMSIS/Include
+-IDrivers/Utilities/Inc
+
+-DSTM32F103xB
+
+-std=c99

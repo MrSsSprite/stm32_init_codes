@@ -38,8 +38,7 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
-Core/Src/main.c \
-$(wildcard Drivers/Utilities/*.c)
+$(wildcard Core/Src/*.c)
 
 # ASM sources
 ASM_SOURCES =  \
@@ -90,7 +89,6 @@ AS_DEFS =
 
 # C defines
 C_DEFS =  \
--DUSE_HAL_DRIVER \
 -DSTM32F103xB
 
 
