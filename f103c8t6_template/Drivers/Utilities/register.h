@@ -63,6 +63,20 @@ typedef struct
 /**
  * @}
  */
+/**
+ * @addtogroup Core_Peripherals_register_structures
+ * @{
+ */
+typedef struct
+{
+   __RW uint32_t CTRL;
+   __RW uint32_t LOAD;
+   __RW uint32_t VAL;
+   __RW uint32_t CALIB;
+} SysTick_Reg;
+/**
+ * @}
+ */
 
 /**
  * @addtogroup Peripheral_memory_map
@@ -133,6 +147,15 @@ typedef struct
  */
 
 /**
+ * @addtogroup Peripheral_memory_map
+ * @{
+ */
+#define STK_BASE        (0xE000E010UL)
+/**
+ * @}
+ */
+
+/**
  * @addtogroup Peripheral_registers_declaration
  * @{
  */
@@ -145,6 +168,15 @@ typedef struct
 #define GPIOG           ((GPIO_Reg*)GPIOG_BASE)
 
 #define RCC             ((RCC_Reg*)RCC_BASE)
+/**
+ * @}
+ */
+/**
+ * @addtogroup Core_Peripherals_registers_declaration
+ * @{
+ */
+#define STK             ((SysTick_Reg*)STK_BASE)
+#define SysTick         (STK)
 /**
  * @}
  */
