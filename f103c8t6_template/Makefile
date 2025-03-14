@@ -38,7 +38,8 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
-$(wildcard Core/Src/*.c)
+$(wildcard Core/Src/*.c) \
+$(wildcard Drivers/Utilities/Src/*.c)
 
 # ASM sources
 ASM_SOURCES =  \
